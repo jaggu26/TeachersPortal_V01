@@ -15,8 +15,13 @@ public class LoginServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String email = request.getParameter("email");		
 		String password = request.getParameter("password");		
-		System.out.println("Registeration Succefull");
+	
 		//Add Ternery Operators please...
+		if (email.equals("vaheeb@gmail.com") && password.equals("1234")) {
+			System.out.println("Succefuull");
+		}else {
+			System.out.println("failed login !!!!");
+		}
 		
 		
 	}
